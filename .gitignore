@@ -1,3 +1,4 @@
 # this Folder and files will ignore when uplaod to github
 node_modules/
 .env
+*.yaml
