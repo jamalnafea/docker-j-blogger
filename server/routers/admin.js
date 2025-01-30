@@ -199,23 +199,6 @@ router.put('/edit-post/:id', authMiddleware, async (req, res) => {
 
 });
 
-
-// router.post('/admin', async (req, res) => {
-//   try {
-//     const { username, password } = req.body;
-
-//     if (req.body.username === 'admin' && req.body.password === 'password') {
-//       res.send('You are logged in.')
-//     } else {
-//       res.send('Wrong username or password');
-//     }
-
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
-
-
 /**
  * POST /
  * Admin - Register
@@ -257,7 +240,6 @@ router.delete('/delete-post/:id', authMiddleware, async (req, res) => {
 
 });
 
-
 /**
  * GET /
  * Admin Logout
@@ -267,6 +249,5 @@ router.get('/logout', (req, res) => {
   //res.json({ message: 'Logout successful.'});
   res.redirect('/');
 });
-
 
 module.exports = router;
